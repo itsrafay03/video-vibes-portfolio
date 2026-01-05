@@ -1,0 +1,610 @@
+:root {
+    --bg-dark: #060b1a;
+    --card-bg: rgba(255, 255, 255, 0.08);
+    --neon-blue: #00d4ff;
+    --purple: #7b5cff;
+    --text-light: #e6f1ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0d1b3d, #060b1a);
+    color: var(--text-light);
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--neon-blue);
+}
+
+.navbar a {
+    color: var(--text-light);
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.cta {
+    background: linear-gradient(45deg, var(--neon-blue), var(--purple));
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 10% 80px;
+    gap: 60px;
+}
+
+.hero-logo img {
+    width: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px var(--neon-blue);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+}
+
+.hero-text span {
+    color: var(--neon-blue);
+}
+
+.hero-text h2 {
+    margin-top: 10px;
+    font-weight: 500;
+    background: linear-gradient(90deg, var(--neon-blue), var(--purple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 14px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.primary {
+    background: var(--neon-blue);
+    color: #000;
+}
+
+.secondary {
+    border: 2px solid var(--neon-blue);
+    color: var(--neon-blue);
+}
+
+/* SERVICES */
+.services {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.service-card:hover {
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 20px var(--neon-blue);
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 80px 5%;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title span {
+    width: 60px;
+    height: 1px;
+    background: #555;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+
+.video-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* SHORTS */
+.scroll-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* SHORTS & THUMBNAILS - SCROLL ROW IMAGES */
+.scroll-row img {
+    width: 200px;
+    height: 360px;
+    border-radius: 15px;
+    /* This enables the smooth animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Optional: Improves image rendering during scale */
+    backface-visibility: hidden;
+}
+
+/* THE HOVER ANIMATION */
+.scroll-row img:hover {
+    /* Zooms in slightly */
+    transform: scale(1.08);
+    /* Adds your signature neon glow */
+    box-shadow: 0 0 25px var(--neon-blue);
+    /* Ensures it sits above other elements */
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+.contact button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, var(--neon-blue), var(--purple));
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #02040f;
+}
+
+
+/* TESTIMONIALS SECTION CONTAINER */
+.testimonials {
+    padding: 80px 5%;
+}
+
+.testimonial-row {
+    padding: 30px 10px;
+    /* Padding space for hover animation */
+}
+
+/* THE REVIEW CARD - SIZE & LAYOUT FIXES */
+.testimonial-card {
+    /* Fixed dimensions for symmetry */
+    min-width: 350px;
+    /* REDUCED HEIGHT: Changed from 280px to 240px so it's less "massive" */
+    height: 240px;
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    /* Reduced padding slightly to fit content better in shorter card */
+    padding: 25px;
+
+    /* Flex layout to push review text to top and client info to bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.3s ease;
+    cursor: default;
+    /* IMPORTANT: Prevents anything from spilling out of the card boundaries */
+    overflow: hidden;
+}
+
+/* Hover Animation */
+.testimonial-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--neon-blue);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
+
+/* THE REVIEW TEXT */
+.review-text {
+    font-size: 0.95rem;
+    /* Slightly smaller font to fit better */
+    font-style: italic;
+    color: #ccc;
+    line-height: 1.5;
+    /* Optional: Uncomment lines below if text is still too long and spills over */
+    /* display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; */
+}
+
+/* REVIEWER INFO CONTAINER (Bottom Section) - LAYOUT FIX */
+.reviewer-info {
+    /* This ensures the image and details sit side-by-side horizontally */
+    display: flex;
+    align-items: center;
+    /* Vertically centers text with image */
+    gap: 15px;
+    /* Space between image and text */
+    margin-top: 15px;
+    /* Ensure separation from review text */
+}
+
+/* CLIENT IMAGE - SHAPE & SIZE FIX */
+.reviewer-img {
+    /* Fixed small size */
+    width: 50px;
+    height: 50px;
+    /* MAKES IT ROUND */
+    border-radius: 50%;
+    /* Ensures image isn't stretched */
+    object-fit: cover;
+    border: 2px solid var(--neon-blue);
+    /* Prevents image from getting squashed if name is long */
+    flex-shrink: 0;
+}
+
+/* CLIENT NAME & ROLE CONTAINER */
+.reviewer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.reviewer-details .name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-light);
+    line-height: 1.2;
+}
+
+.reviewer-details .role {
+    font-size: 0.85rem;
+    color: var(--neon-blue);
+}
+
+/* 5-STAR RATING */
+.rating {
+    color: #FFD700;
+    /* Gold Color */
+    font-size: 1.2rem;
+    margin-left: auto;
+    /* Pushes stars to the far right */
+    letter-spacing: 1px;
+
+    /* MOVES THE STARS UP */
+    transform: translateY(-18px);
+}
+
+/* Responsive adjustment for smaller screens */
+@media(max-width: 480px) {
+    .testimonial-card {
+        min-width: 300px;
+        /* On mobile, we might need a bit more height for text wrapping */
+        height: 260px;
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* PORTFOLIO SUB HEADINGS */
+.sub-heading {
+    margin: 60px 0 25px;
+    font-size: 1.8rem;
+    text-align: center;
+    background: linear-gradient(90deg, var(--neon-blue), var(--purple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* PLAY ICON */
+.play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    opacity: 0.8;
+}
+
+/* HORIZONTAL AUTO SCROLL */
+.auto-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.auto-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* THUMBNAIL SIZE (DIFFERENT FROM SHORTS) */
+.thumbnails-row img {
+    width: 230px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumbnails-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--neon-blue);
+}
+
+/* MODAL (DIALOG PREVIEW) */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 15px;
+    box-shadow: 0 0 40px var(--neon-blue);
+}
+
+.close-modal {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* =========================================
+   FINAL FIX: Mobile Buttons & Padding
+   ========================================= */
+
+@media (max-width: 991px) {
+
+    /* 1. SQUEEZE THE PADDING: Give content more space! */
+    section {
+        /* Reduce side padding from 9% (or 4%) to just 10px on mobile */
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .header {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* 2. UNLOCK THE BUTTON CONTAINER */
+    .home-content .btn-box {
+        /* Stop forcing it to be 345px wide */
+        width: 100% !important;
+        max-width: 350px !important;
+        /* Keep it neat */
+
+        /* Stop forcing it to be 50px tall (CRITICAL FIX) */
+        height: auto !important;
+
+        /* Stack them nicely */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        margin-top: 20px !important;
+
+        /* Center everything */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* 3. FIX THE INDIVIDUAL BUTTONS */
+    .btn-box a {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        /* Fill the new space */
+        height: 50px !important;
+        /* Keep the nice button height */
+        margin: 0 !important;
+    }
+}
+
+/* =========================================
+   SOCIAL ICONS (Fiverr & LinkedIn)
+   ========================================= */
+
+/* =========================================
+   FINAL SOCIAL ICONS (White Background)
+   ========================================= */
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+
+    /* CHANGE 1: Background is now White */
+    background: #ffffff;
+
+    /* CHANGE 2: Border is White to match */
+    border: 2px solid #ffffff;
+
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    overflow: hidden;
+
+    /* Optional: Adds a shadow so the white pops off the dark screen */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Image styling */
+.social-icons a img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    filter: none;
+    /* Shows original logo colors */
+    transition: transform 0.5s ease;
+}
+
+/* HOVER EFFECT: Turns Cyan when touched */
+.social-icons a:hover {
+    background: var(--main-color);
+    /* Turns Cyan */
+    border-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+    transform: translateY(-7px);
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+    /* Optional: If you want logos to turn white on hover, uncomment next line */
+    /* filter: brightness(0) invert(1); */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+    .social-icons {
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+
+/* =========================================
+   FIX: Center Social Icons in Contact Section
+   ========================================= */
+.contact .social-icons {
+    justify-content: center;
+    /* Forces them to the middle */
+    width: 100%;
+    /* Ensures they have space to center */
+    margin-top: 30px;
+    /* Adds space between "Send Message" and icons */
+}
+
+/* =========================================
+   FINAL FIX: Testimonial Cards (Cursor & No Underlines)
+   ========================================= */
+
+/* 1. Main Card Link Style */
+a.testimonial-card {
+    text-decoration: none !important;
+    /* Force removal of the main link underline */
+    color: inherit;
+    /* Keeps your original text color */
+    display: block;
+    /* Ensures the card keeps its box shape */
+    cursor: pointer !important;
+    /* FORCE the 'hand' icon to appear on hover */
+    transition: transform 0.3s ease;
+    /* Adds a nice smooth animation */
+}
+
+/* 2. CRITICAL FIX: Remove underlines from text INSIDE the card */
+/* This targets the paragraph text, the name, and the role specifically */
+a.testimonial-card p,
+a.testimonial-card h4,
+a.testimonial-card .review-text,
+a.testimonial-card .name,
+a.testimonial-card .role {
+    text-decoration: none !important;
+    /* Absolutely no underlines on text */
+    color: inherit !important;
+    /* Keep original colors */
+}
+
+/* 3. Optional Hover Effect (Makes it pop) */
+a.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}

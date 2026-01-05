@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Vibes | Muhammad</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* FORCE FIX FOR TESTIMONIALS */
+
+        /* 1. Fix the Card Size */
+        .testimonial-card {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            height: 240px !important;
+            /* Forces shorter height */
+            min-width: 350px !important;
+            padding: 25px !important;
+            overflow: hidden !important;
+            /* Hides anything sticking out */
+        }
+
+        /* 2. Fix the Layout (Image Left, Text Right) */
+        .reviewer-info {
+            display: flex !important;
+            flex-direction: row !important;
+            /* Forces side-by-side */
+            align-items: center !important;
+            gap: 15px !important;
+            margin-top: 15px !important;
+            width: 100% !important;
+        }
+
+        /* 3. Fix the Image (Round & Small) */
+        .reviewer-img {
+            width: 50px !important;
+            height: 50px !important;
+            min-width: 50px !important;
+            /* Prevents squishing */
+            border-radius: 50% !important;
+            /* Forces Circle */
+            object-fit: cover !important;
+            border: 2px solid var(--neon-blue) !important;
+            margin: 0 !important;
+            /* Removes any default margins */
+        }
+
+        /* 4. Fix the Text Alignment */
+        .reviewer-details {
+            display: flex !important;
+            flex-direction: column !important;
+            text-align: left !important;
+        }
+
+        /* Mobile Fix */
+        @media(max-width: 480px) {
+            .testimonial-card {
+                min-width: 300px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="brand">Video Vibes</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="https://www.fiverr.com/s/rEmVP5b" class="cta" style="background: #1dbf73; color: white;"
+                target="_blank">
+                <b>Fiverr</b>
+            </a>
+            <a href="#contact" class="cta"><b>Hire Me</b></a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-logo">
+            <img src="assets/images/logo.png" alt="Video Vibes Logo">
+        </div>
+
+        <div class="hero-text">
+            <h1>Hey, I’m <span>Muhammad</span> 👋</h1>
+            <h2>We help creators and brands grow on YouTube.</h2>
+            <h2>From video editing to thumbnails, branding, and channel setup, we turn ideas into professional content
+                that performs and grow.</h2>
+
+            <div class="buttons">
+                <a href="#portfolio" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mr-muhammad-videovibes/" target="_blank">
+                    <img src="assets/images/thumbnails/linkedin.png" alt="LinkedIn">
+                </a>
+
+                <a href="https://www.fiverr.com/s/rEmVP5b" target="_blank">
+                    <img src="assets/images/thumbnails/fiver.png" alt="Fiverr">
+                </a>
+
+                <a href="mailto:videovibesprofessional@gmail.com" target="_blank">
+                    <img src="assets/images/thumbnails/gmail.png" alt="Email">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <h2>SERVICES</h2>
+        <div class="service-grid">
+            <div class="service-card">YouTube Video Editing</div>
+            <div class="service-card">Shorts & Reels Editing</div>
+            <div class="service-card">Thumbnail Design</div>
+            <div class="service-card">Logo Design</div>
+            <div class="service-card">Channel Setup</div>
+            <div class="service-card">Channel Management</div>
+            <div class="service-card">SEO and Optimization</div>
+            <div class="service-card">2D & 3D Animation</div>
+            <div class="service-card">Voice-over Creation</div>
+            <div class="service-card">Intro-Outro Creation</div>
+            <div class="service-card">Keyword Research</div>
+            <div class="service-card">Colour Grading</div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+
+        <!-- MAIN TITLE -->
+        <div class="section-title">
+            <h2>PORTFOLIO</h2>
+        </div>
+
+        <!-- VIDEOS -->
+        <h3 class="sub-heading">Videos</h3>
+        <div class="video-grid">
+            <!-- 10 VIDEOS = 2 COLUMNS × 5 ROWS -->
+            <a href="https://drive.google.com/file/d/1_5gZl3NgJmYkmO3eYpsNq8DrOupbjRPU/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video1.jpg" alt="YouTube Video Editing Sample 1">
+            </a>
+
+            <a href="https://drive.google.com/file/d/144eeetKiMUGGh2GusJBqLjC7nQPxMElv/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video2.png">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1vaCGlag6QnKSGBG0tdg7pam_wAl64xQD/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video3.jpg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1rW2WepEwvNrdhYNHEnLAWxECW0jbGVUT/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video4.jpg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/10RHltSEFiALaD_4L1ZyFAmMbKRN6tbyZ/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video5.jpg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1EW7A_721HyKguWh3VKcM9N4ZKzVccAY8/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video6.jpg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1j_sCjeYpXRYxEPAktXjaOk63q_qlWnpd/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video7.png">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1Ww3oarhwWhOxFCfkoboDIA2gS82-Zuc9/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video8.png">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1sr8lodiqIj_LhVPeo63zGek-HWnGfDAT/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video9.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1vWiPqmVGMp7ztinp-QQAA55Ocy4dq29R/view?usp=sharing" target="_blank"
+                class="video-card">
+                <img src="assets/images/thumbnails/video10.png">
+            </a>
+
+            <!-- ADD MORE VIDEO CARDS (TOTAL 10) -->
+        </div>
+
+        <!-- THUMBNAILS -->
+        <h3 class="sub-heading">Thumbnails</h3>
+        <div class="scroll-row auto-scroll thumbnails-row">
+            <img src="assets/images/thumbnails/thumb1.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb2.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb3.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb4.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb5.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb6.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb7.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb8.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb9.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb10.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb11.png" class="thumbnail-item" alt="Thumbnail">
+            <img src="assets/images/thumbnails/thumb12.png" class="thumbnail-item" alt="Thumbnail">
+            <!-- Add more thumbnails -->
+        </div>
+
+        <!-- SHORTS -->
+        <h3 class="sub-heading">Shorts</h3>
+        <div class="scroll-row auto-scroll">
+            <a href="https://drive.google.com/file/d/1COWt8SwMLNC4toteOiB1iFQeSENnPZOe/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short4.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/148JmhAeFa5OCelllt57bkyBFtEH3meIl/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short2.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1nz-KKmzxkd05IDY7n7y63WqMs4IVP9RI/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short3.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1_KB1ETUnlYXtRqvQhCd3pMFPl0fmlpiC/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short1.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1dG-3f4TfLBpXma5lr6ifTdW-ySkou-GF/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short5.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/16CZLkkPopO_TxXFTNbHAQEWG8Ejcft6u/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short6.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1kIc06lzbjy01vXeB-5J-1PNP1C1TKOKA/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short7.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1E13YCh_2v4_duFBR9AMbkXPQ7uRYoizD/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short8.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1R5MglxA0_t9MwYivH82LzbfgHelUGj1K/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short9.jpeg">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1MA6_Y7NFQt8cuUfMozWP08IM9qzEJUnu/view?usp=sharing"
+                target="_blank">
+                <img src="assets/images/thumbnails/short10.jpeg">
+            </a>
+            <!-- Add more shorts -->
+        </div>
+    </section>
+
+
+    <!-- Clint Reviews section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-title">
+            <h2>CLIENT REVIEWS</h2>
+        </div>
+
+        <div class="scroll-row auto-scroll testimonial-row">
+            <a href="https://www.fiverr.com/s/rEmVP5b" target="_blank" class="testimonial-card">
+                <p class="review-text">"Finally my channel looks like a real brand. The logo and banner you make are
+                    perfect. Super happy with how it turned out."</p>
+                <div class="reviewer-info">
+                    <img src="assets/images/thumbnails/clint1.jpg" alt="Client 1" class="reviewer-img">
+                    <div class="reviewer-details">
+                        <h4 class="name">David Smith</h4>
+                        <p class="role">Gaming Creator on Discord</p>
+                    </div>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </a>
+
+            <a href="https://www.fiverr.com/s/rEmVP5b" target="_blank" class="testimonial-card">
+                <p class="review-text">"I worked with many editors before but he is the first who truly understand my
+                    style and demands. All orders are delivered on time, reasonable pricing and revisions."</p>
+                <div class="reviewer-info">
+                    <img src="assets/images/thumbnails/clint2.jpg" alt="Client 3" class="reviewer-img">
+                    <div class="reviewer-details">
+                        <h4 class="name">Sarah J.</h4>
+                        <p class="role">Lifestyle Vlogger (500k Subs)</p>
+                    </div>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </a>
+
+            <a href="https://www.fiverr.com/s/rEmVP5b" target="_blank" class="testimonial-card">
+                <p class="review-text">"Wao, My CTR literally doubled on the first day. These thumbnails are clean,
+                    impressive and they don't look like generic stuff you see everywhere. 10/10 highly
+                    recommended."</p>
+                <div class="reviewer-info">
+                    <img src="assets/images/thumbnails/clint3.jpg" alt="Client 2" class="reviewer-img">
+                    <div class="reviewer-details">
+                        <h4 class="name">Mark Techson</h4>
+                        <p class="role">Tech Reviewer, GFSMentor</p>
+                    </div>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </a>
+
+            <a href="https://www.fiverr.com/s/rEmVP5b" target="_blank" class="testimonial-card">
+                <p class="review-text">"The best editor I've hired on Fiverr. He understand animated video editing
+                    perfectly. My audience retention duration increased significantly after hiring him."</p>
+                <div class="reviewer-info">
+                    <img src="assets/images/thumbnails/clint4.jpg" alt="Client 5" class="reviewer-img">
+                    <div class="reviewer-details">
+                        <h4 class="name">Emily Foster</h4>
+                        <p class="role">Social Media Manager</p>
+                    </div>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2><br>
+        <form action="https://formspree.io/f/xjgkoljd" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mr-muhammad-videovibes/" target="_blank">
+                <img src="assets/images/thumbnails/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <a href="https://www.fiverr.com/s/rEmVP5b" target="_blank">
+                <img src="assets/images/thumbnails/fiver.png" alt="Fiverr">
+            </a>
+
+            <a href="mailto:videovibesprofessional@gmail.com" target="_blank">
+                <img src="assets/images/thumbnails/gmail.png" alt="Email">
+            </a>
+
+            <a href="https://wa.me/923286880419" target="_blank">
+                <img src="assets/images/thumbnails/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Video Vibes | Muhammad</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- THUMBNAIL MODAL -->
+    <div id="thumbnailModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+</body>
+
+</html>
