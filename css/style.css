@@ -608,3 +608,37 @@ a.testimonial-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
+
+/* =========================================
+   FIX: MOBILE NAVBAR OVERLAP
+   ========================================= */
+@media (max-width: 991px) {
+
+    /* 1. Hide the text links (Home, Services, Portfolio) on mobile */
+    /* This clears the clutter so buttons fit */
+    .navbar nav a:not(.cta) {
+        display: none;
+    }
+
+    /* 2. Make the "Fiverr" & "Hire Me" buttons slightly smaller to fit */
+    .navbar .cta {
+        padding: 8px 12px !important;
+        /* Smaller padding */
+        font-size: 0.85rem !important;
+        /* Smaller text */
+        margin-left: 8px !important;
+        /* Smaller gap between buttons */
+    }
+
+    /* 3. Adjust the Logo size slightly if needed */
+    .brand {
+        font-size: 1.4rem;
+    }
+
+    /* 4. Ensure the Navbar padding is balanced */
+    .navbar {
+        padding: 15px 20px;
+        /* Reduced side padding */
+    }
+}
